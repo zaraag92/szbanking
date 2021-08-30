@@ -497,6 +497,12 @@ template {
   opacity: 0.7;
 }
 
+.btn-reset {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
 .text {
   font-size: 18px;
   line-height: 28px;
@@ -684,7 +690,7 @@ img {
   content: "";
   position: absolute;
   width: 104%;
-  background: url(/szbanking/img/bg-intro-desktop.svg) no-repeat;
+  background: url(../img/bg-intro-desktop.svg) no-repeat;
   right: -46%;
   top: -20%;
   height: 102%;
@@ -839,12 +845,12 @@ img {
   overflow: hidden;
 }
 
-.article:hover {
+.article__link:hover {
   -webkit-box-shadow: 0px 0px 18px 0px #27292881;
           box-shadow: 0px 0px 18px 0px #27292881;
 }
 
-.article:hover .article__img img {
+.article__link:hover .article__img img {
   -webkit-transition: 0.3s all linear;
   -o-transition: 0.3s all linear;
   transition: 0.3s all linear;
@@ -853,7 +859,7 @@ img {
           transform: scale(1.25) rotate(5deg);
 }
 
-.article:hover .article__title {
+.article__link:hover .article__title {
   color: #30C88F;
   -webkit-transition: 0.3s color linear;
   -o-transition: 0.3s color linear;
@@ -936,19 +942,7 @@ img {
   fill: white;
 }
 
-.footer__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.footer__menu {
+.footer__list {
   width: 160px;
   margin: 0 30px 0 0;
   display: -webkit-box;
@@ -958,6 +952,18 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__item {
@@ -1087,7 +1093,7 @@ img {
     margin: 0 10px 40px 10px;
   }
 
-  .footer__menu {
+  .footer__list {
     width: 100px;
     margin: 0 15px 0 0;
   }
@@ -1342,7 +1348,7 @@ img {
     margin: 0 0 32px 0;
   }
 
-  .footer__row {
+  .footer__menu {
     padding: 32px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
